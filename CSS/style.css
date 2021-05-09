@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 68.5%;
+}
+body{
+    height: 10vh;
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: grey;
+    background: none;
+    transition: ease 0.3s;
+}
+.main-container{
+    margin: 0 10rem;
+    height: auto;
+}
+.main-container .nav{
+    padding: 1.8rem 0;
+}
+.main-container .nav .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+}
+.main-container .nav .navbar .daynight{
+    display: flex;
+}
+#day{
+    display: none;
+}
+.main-container .nav .navbar li{
+    margin: 0 2rem;
+}
+.main-container .nav .navbar li p{
+    font-weight: bold;
+}
+.main-container .main-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+}
+.main-container .main-body *{
+    margin: 0.5rem 0;
+}
+.main-container .main-body ul{
+    display: flex;
+}
+.main-container .main-body ul li{
+    margin: 0 1rem;
+}
+.main-container .main-body ul li i:hover{
+    transform: scale(1.5);
+}
+.main-body .circleImg{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+}
+.main-body .circleImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/*projects*/
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+.projects div{
+    height: auto;
+    padding: 1.5rem 2rem;
+    margin: 2.5rem 2rem;
+    border: 1px solid rgb(133, 133, 121);
+    text-align: center;
+    border-radius: 1.2rem;
+    box-shadow: 0px -1px 12px 0px rgba(133, 133, 121,0.85);
+    transition: all 0.3s ease;
+}
+.projects div:hover{
+    transform: scale(1.06);
+}
+.projects div h2{
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+.projects div p{
+    font-size: 1.4rem;
+}
+.projects div a{
+    font-size: 1.6rem;
+}
+/*Skills*/
+
+.skills{
+    padding: 6rem 0;
+}
+.skills ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills ul li{
+    margin: 0 4rem;
+    font-size: 5rem;
+}
+.skills ul li {
+    background: none;
+}
+
+/*Footer*/
+.footer{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+.footer .left-footer{
+    margin-bottom: 2rem;
+}
+.footer .left-footer ul li{
+    font-size: 1.8rem;
+}
+.footer .right-footer{
+    margin-top: 2rem;
+}
+.footer .right-footer h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.footer .right-footer p{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+.footer .right-footer ul{
+    display: flex;
+}
+.footer .right-footer ul li i{
+    margin-left: 1.2rem;
+    font-size: 2.2rem;
+    background: rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+/*media*/
+
+@media screen and (max-width: 890px){
+    .main-container{
+        margin: 0 5rem;
+    }
+    .projects{
+        padding: 1.5rem 0;
+        margin: 2.5rem 1.5rem;
+        grid-template-columns: 1fr;
+    }
+    .projects h2{
+        font-size: 1.4rem;
+    }
+    .projects p{
+        font-size: 1rem;
+    }
+    .skills ul li{
+        margin: 0 2rem;
+        font-size: 4rem;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .main-body h2{
+        font-size: 2rem
+    }
+    .main-body p{
+        font-size: 1.5rem
+    }
+    .projects .project h2{
+        font-size: 1.5rem;
+    }
+    .projects .project p{
+        font-size: 1.2rem;
+    }
+
+    .skills{
+        padding: 4rem 0;
+    }
+    .skills ul li{
+        margin: 0 0.8rem ;
+        font-size: 3.8rem;
+    }
+
+    
+    .footer .left-footer ul li{
+        font-size: 1.4rem;
+    }
+
+}
+@media screen and (max-width: 350px){
+    .skills ul li{
+
+        font-size: 2.4rem;
+    }
+}
