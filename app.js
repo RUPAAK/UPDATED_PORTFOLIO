@@ -36,7 +36,7 @@ app.post('/', async (req, res) => {
     }
 })
 
-mongoose.connect(process.env.MONGO, {
+mongoose.connect("mongodb+srv://rupak:rupakthapa123%23@portfolio.viqbe.mongodb.net/PORTFOLIO?retryWrites=true&w=majority", {
     useCreateIndex: true, useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true
 }).then(() => console.log('CONNECITON TO DATABASE')).catch((e) => console.log(e))
 
